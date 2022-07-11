@@ -28,11 +28,11 @@ public class ProductRepositoryTest {
         repo.save(smartphone1);
         repo.save(smartphone2);
         repo.save(smartphone3);
-        repo.removeById(7);
+        repo.removeById(6);
         repo.findAll();
 
         Product[] actual = repo.findAll();
-        Product[] expected = {book1, book2, book3, smartphone2, smartphone3};
+        Product[] expected = {book2, book3, smartphone1, smartphone2, smartphone3};
         Assertions.assertArrayEquals(expected, actual);
     }
 }

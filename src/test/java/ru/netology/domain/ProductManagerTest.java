@@ -29,7 +29,7 @@ public class ProductManagerTest {
         manager.add(smartphone2);
         manager.add(smartphone3);
 
-        Product[] actual = manager.searchBy("а");
+        Product[] actual = manager.searchBy("е");
         Product[] expected = {book1, book2, book3};
         Assertions.assertArrayEquals(expected, actual);
 
@@ -63,7 +63,7 @@ public class ProductManagerTest {
         manager.add(smartphone2);
         manager.add(smartphone3);
 
-        manager.removeById(7);
+        manager.removeById(8);
         manager.findAll();
 
         Product[] actual = manager.findAll();
